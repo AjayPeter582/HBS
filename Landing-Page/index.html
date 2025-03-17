@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            My Favourite
+        </div>
+        <div class="nav-right">
+            <div class="nav-container">
+                <button>Home</button>
+                <button>About</button>
+                <button>Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="slider-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slider">
+            <div class="slide">
+                <img src="Images/image1.jpg" alt="Image 1">
+                <p class="caption">A beautiful sunrise over the ocean.</p>
+            </div>
+            <div class="slide">
+                <video class="video-slide" src="Images/video1.mp4"></video>
+                <p class="caption">Waves crashing on the shore.</p>
+            </div>
+            <div class="slide">
+                <img src="Images/image2.jpg" alt="Image 2">
+                <p class="caption">A peaceful beach view with palm trees.</p>
+            </div>
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <footer>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
